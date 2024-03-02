@@ -1,0 +1,4 @@
+.projects-container {
+    height: calc(100% - 55px); //55px is height of nav bar
+    overflow-y: scroll;
+}

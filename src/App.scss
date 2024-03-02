@@ -1,0 +1,45 @@
+#root {
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  scrollbar-width: thin;
+  scrollbar-color: black white;
+}
+
+@font-face {
+  font-family: amsterdam;
+  src: url(./assets/fonts/AMST.ttf);
+}
+
+@font-face {
+  font-family: activist;
+  src: url(./assets/fonts/Activists-Regular.ttf);
+}
+
+@font-face {
+  font-family: against;
+  src: url(./assets/fonts/against-regular.ttf);
+}
+
+@font-face {
+  font-family: lover modern;
+  src: url(./assets/fonts/ALLOVER-MODERN-DEMO.ttf);
+}
+
+@font-face {
+  font-family: freedom;
+  src: url(./assets/fonts/Allowing-Freedom-Demo.ttf);
+}
+
+@font-face {
+  font-family: aspect;
+  src: url(./assets/fonts/ASPECT-RANGE-DEMO.ttf);
+}
+
+@font-face {
+  font-family: great victorian;
+  src: url(./assets/fonts/GreatVictorian-Swashed.ttf);
+}
