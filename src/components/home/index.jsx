@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import './style.scss';
 import NavOptions from "../navigation";
 import ScrollArrow from "../../animations/scroll-arrow";
+import SpinningStar from "../../animations/spinning-star";
 
 export default function Home() {
   return (
@@ -9,13 +10,8 @@ export default function Home() {
       <main>
         <section className="intro">
           <h1>OCEAN</h1>
-          <span 
-            style={{ 
-              fontSize: "100px", 
-              color: "rgba(255, 255, 255, 0.8)" 
-            }}
-          >
-            ✦
+          <span>
+            <SpinningStar text={'✦'}/>
           </span>
         </section>
         <section className="nav">

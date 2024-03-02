@@ -25,7 +25,6 @@ export default function ScrollArrow() {
 
   return (
     <div
-
       style={{display: 'flex'}}
     >
       <motion.img 
@@ -40,8 +39,8 @@ export default function ScrollArrow() {
         variants={variants}
         initial={'initial'}
         whileInView={'pulse'}
-        onTransitionEnd={{opacity: '0'}}
-        width={50}
+        onTransitionEnd={() => {'scroll'}}
+        width={25}
       />
       <motion.img 
         src={basicLine}

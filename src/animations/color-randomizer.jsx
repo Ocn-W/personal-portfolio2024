@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { motion } from "framer-motion";
 import { getRandomColor } from "../constants/arrays";
+import SpinningStar from "./spinning-star";
 
 export default function RandomizeColor({ text }) {
   const splitText = text.split("");
