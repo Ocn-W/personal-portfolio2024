@@ -24,7 +24,7 @@ export default function ScrollArrow() {
   };
 
   return (
-    <div
+    <motion.div
       style={{display: 'flex'}}
     >
       <motion.img 
@@ -48,6 +48,6 @@ export default function ScrollArrow() {
         initial={'initialLine'} 
         width={75}
       />
-    </div>
+    </motion.div>
   )
 }

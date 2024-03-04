@@ -18,11 +18,13 @@ export default function ShiftText({textOne, textTwo}) {
   function stopTimer() {
     clearTimeout(timer.current);
   }
-  
+
   const variants = {
     initial: {
       opacity: 0.8,
-      fontSize: "60px"
+      fontSize: "60px",
+      border: '1px solid rgba(255,255,255,1)', 
+      borderRadius: "50%"
     },
     shrinkFadeOut: {
       opacity: 0,
@@ -36,6 +38,12 @@ export default function ShiftText({textOne, textTwo}) {
   return (     
   <>
   <motion.div
+    style={{
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      borderRadius: "50%", 
+    }}
     onHoverStart={() => textChange()}
     onHoverEnd={() => stopTimer()}
   >
@@ -44,7 +52,7 @@ export default function ShiftText({textOne, textTwo}) {
       variants={variants}
       initial={'initial'}
       whileHover={["shrinkFadeOut"]}
-
+      exit={{ease: "easeInOut", duration: 0.1}}
       key={i}
       style={{
         cursor: 'crosshair',
