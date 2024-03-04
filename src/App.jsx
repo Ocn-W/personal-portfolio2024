@@ -12,8 +12,10 @@ function App() {
       <ParallaxLayer>
         <Home/>
       </ParallaxLayer>
-      <ParallaxLayer sticky={{start: 1}}>
+      <ParallaxLayer sticky={{start: 1}} style={{height: 'fit-content'}}>
         <NavHeader/>
+      </ParallaxLayer>
+      <ParallaxLayer sticky={{start: 2}} style={{height: 'fit-content'}}>
         <NavBar/>
       </ParallaxLayer>
       <ParallaxLayer offset={1} speed={1}>
