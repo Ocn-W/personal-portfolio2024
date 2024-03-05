@@ -4,6 +4,7 @@ import Home from './components/home'
 import AboutMe from './components/about-me';
 import NavBar from './components/navigation/navigation-bar';
 import NavHeader from './components/navigation/simple-header';
+import SpinningStar from './animations/spinning-star';
 
 function App() {
   return (

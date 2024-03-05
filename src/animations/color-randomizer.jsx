@@ -25,7 +25,6 @@ export default function RandomizeColor({ text }) {
 
   return (
     <>
-      <span style={{ color: "rgba(255,255,255,0.8)" }}>✶</span>{" "}
       {splitText.map((letter, i) => (
         <motion.span
           whileHover={"pulsing"}

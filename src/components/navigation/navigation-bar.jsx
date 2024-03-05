@@ -13,7 +13,7 @@ export default function NavBar() {
           <a href={""}>RESUME</a>
         </li>
         <li>
-          <a href={"/projects"}>PROJECTS</a>
+          <a href={""}>PROJECTS</a>
         </li>
         <li>
           <a href={""}>CONTACT</a>
