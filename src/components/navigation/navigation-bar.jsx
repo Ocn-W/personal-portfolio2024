@@ -19,7 +19,7 @@ export default function NavBar() {
           <a href={""}>CONTACT</a>
         </li>
         <li>
-          <a href={'/artwork-viewer'}><RandomizeColor text={"ART"}/></a>
+          <a href={'/artwork-viewer'}><span style={{ color: "rgba(255,255,255,0.8)" }}>✶</span>{" "}<RandomizeColor text={"ART"}/></a>
         </li>
       </ul>
     </div>

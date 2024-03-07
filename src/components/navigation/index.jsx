@@ -9,7 +9,7 @@ export default function NavOptions() {
           <li><a href={""}>RESUME</a></li>
           <li><a href={''}>PROJECTS</a></li>
           <li><a href={""}>CONTACT</a></li>
-          <li><a href={''}><RandomizeColor text={"ART"}/></a></li>
+          <li><a href={''}><span style={{ color: "rgba(255,255,255,0.8)" }}>✶</span>{" "}<RandomizeColor text={"ART"}/></a></li>
         </ul>
     </div>
   )

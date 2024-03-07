@@ -35,7 +35,7 @@ export default function RandomizerText({ text }) {
       whileHover="changeFont"
       initial="initial"
       variants={variants}
-      style={{cursor: 'default', width: '10%'}}
+      style={{width: '10%'}}
       onHoverStart={handleHoverStart}
       onHoverEnd={handleHoverEnd}
     >

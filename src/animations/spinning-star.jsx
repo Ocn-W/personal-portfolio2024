@@ -7,20 +7,20 @@ export default function SpinningStar({text}) {
 
   const variants = {
     initial: {
-        opacity: 0.8,
-        y: 0,
-        rotateX: randomDeg(),
+      opacity: 0.8,
+      y: 0,
+      rotateX: randomDeg(),
     },
     spin: {
-        transition: {ease: "easeInOut", duration: 3, repeat: Infinity, repeatType: 'mirror'},
-        opacity: 1,
-        y: randomY(),
-        rotateX: 360,
-        rotateZ: randomDeg(),
-        rotateY: randomDeg()
+      transition: {ease: "easeInOut", duration: 3, repeat: Infinity, repeatType: 'mirror'},
+      opacity: 1,
+      y: randomY(),
+      rotateX: 360,
+      rotateZ: randomDeg(),
+      rotateY: randomDeg()
     },
     fade: {
-        opacity: 0,
+      opacity: 0,
     }
   };
 
@@ -30,7 +30,7 @@ export default function SpinningStar({text}) {
       initial={'initial'}
       whileInView={'spin'}
       exit={() => {'fade'}}
-      style={{color: 'rgba(255,255,255, 0.8)', fontSize: '100px', cursor: 'default'}}
+      style={{color: 'rgba(255,255,255, 0.8)', fontSize: '100px'}}
     >
       {text}
     </motion.p>

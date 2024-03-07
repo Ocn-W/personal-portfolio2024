@@ -2,11 +2,8 @@ import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 
 export default function ShiftText({textOne, textTwo}) {
-  const textOneSplit = textOne.split("");
-  const textTwoSplit = textTwo.split("");
   const mainText = [{textOne, textTwo}];
   const [onView, setOnView] = useState(1);
-  const [isHover, setIsHover] = useState(false);
   const timer = useRef(null);
 
   function textChange() {
@@ -55,7 +52,6 @@ export default function ShiftText({textOne, textTwo}) {
       exit={{ease: "easeInOut", duration: 0.1}}
       key={i}
       style={{
-        cursor: 'crosshair',
         color: 'white',
         fontFamily: 'against',
         width: 'fit-content',

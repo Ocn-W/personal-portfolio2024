@@ -1,39 +1,22 @@
-"use client";
-import React, { useRef } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { projects } from "../components/constants/arrays";
-import ProjectOption from "../projectOptions";
-import "./style.scss";
-import { getPastelColor } from "../components/constants/arrays";
-import FadeInTemplate from "../components/animations/template";
+import React from 'react'
+import './style.scss'
+import { getPastelColor, projects } from '../../constants/arrays'
+import InfoCursor from '../../animations/info-cursor'
+
 
 export default function Projects() {
-  const ref = useRef();
-
-  return (
-    <FadeInTemplate screen={true} ref={ref}>   
-      <section className="projects-container">
-        <Parallax pages={projects.length}>
-        {projects.map((option, index) => {
-          const pastelColorBkg = getPastelColor();
-          return (
-          <ParallaxLayer offset={index} speed={1}>
-            <ProjectOption
-              title={option.name}
-              description={option.description}
-              techStack={option.techstack}
-              dependencies={option.dependencies}
-              demoLink={option.demoUrl}
-              image={option.image}
-              colorBackground = {pastelColorBkg}
-              side={index % 2 === 0 ? "even" : "odd"}
-              key={String(index)}
-            />
-          </ParallaxLayer>
-          )
-        })}
-        </Parallax>
-      </section>
-    </FadeInTemplate>
-  );
+  return (<>
+    <section className='projects-container'>
+        <h1>PROJECTS</h1>
+        <section className='selection-container'>
+          {projects.map((project, index) => (
+            <div className='project-option' key={index + 1}>
+              <p style={{transform: "scaleY(1.5)", fontSize: '18px'}}>✶</p>
+              <p>0{index}</p>
+            </div>
+          ))}
+        </section>
+        
+    </section>
+  </>)
 }

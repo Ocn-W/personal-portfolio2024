@@ -6,7 +6,7 @@ import RandomizerText from '../../animations/font-randomizer';
 export default function NavHeader() {
   return (
     <motion.section className='nav-header'>
-        <RandomizerText text={"OCEAN"}/>
+      <RandomizerText text={"OCEAN"}/>
     </motion.section>
   )
 }

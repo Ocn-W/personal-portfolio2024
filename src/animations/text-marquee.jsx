@@ -1,18 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function TextMarquee({text}) {
+export default function TextMarquee({ text }) {
+  const randomIndex = Math.floor(Math.random() * 6);
+
   const variants = {
     marquee: {
-      x: [0, -1000, -500, -750, -250],
+      //Not really a marquee, more twitchy
+      x: [0, -1000, -100, -950, -200],
       transition: {
         x: {
           repeat: Infinity,
           repeatType: "mirror",
-          type: 'spring',
-          dampening: 100,
-          ramp: 12,
-          duration: 10,
+          type: "spring",
+          damping: 100,
+          duration: 5 * randomIndex,
           ease: "linear",
         },
       },
@@ -22,16 +24,14 @@ export default function TextMarquee({text}) {
   return (
     <motion.div
       style={{
-        whiteSpace: 'nowrap',
-        borderRadius: '50px',
-        width: '50%'
+        whiteSpace: "nowrap",
+        borderRadius: "50px",
+        width: "50%",
       }}
       variants={variants}
       animate="marquee"
     >
-      <motion.p>
-        {text}
-      </motion.p>
+      <motion.p>{text}</motion.p>
     </motion.div>
   );
-};
+}
