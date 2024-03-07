@@ -1,19 +1,35 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import './style.scss'
-import { getPastelColor, projects } from '../../constants/arrays'
-import InfoCursor from '../../animations/info-cursor'
-
+import { getRandomColor, projects } from '../../constants/arrays'
 
 export default function Projects() {
+  const variants = {
+    hovering: (index) => ({
+      backgroundColor: getRandomColor(),
+      borderRadius: '20%',
+      transition: {
+        ease: 'circInOut',
+        duration: 1,
+        type: 'spring'
+      }
+    })
+  }
   return (<>
     <section className='projects-container'>
-        <h1>PROJECTS</h1>
+        <motion.h1>PROJECTS</motion.h1>
         <section className='selection-container'>
           {projects.map((project, index) => (
-            <div className='project-option' key={index + 1}>
+            <motion.div 
+              className='project-option' 
+              key={index + 1}
+              variants={variants}
+              custom={index}
+              whileHover='hovering'
+            >
               <p style={{transform: "scaleY(1.5)", fontSize: '18px'}}>✶</p>
               <p>0{index}</p>
-            </div>
+            </motion.div>
           ))}
         </section>
         
