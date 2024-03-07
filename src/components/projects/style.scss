@@ -6,38 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: none;
+
     h1 {
         text-align: center;
-        font-size: 175px;
-        font-weight: bold;
-        font-family: against;
-        margin-top: 20px;
         color: rgba($color: #FFFFFF, $alpha: 0.8);
-    }
-    .selection-container {
-        width: 85%;
-        border-radius: 5px;
-        background-color: rgba($color: #FFFFFF, $alpha: 0.8);
-        height: 40%;
-        display: flex;
-
-        .project-option {
-            background-color: black;
-            width: 25%;
-            border-radius: 40%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-
-            p {
-                width: fit-content;
-                font-family: great victorian;
-                font-size: 50px;
-                color: rgba($color: #FFFFFF, $alpha: 0.8);
-                font-weight: bold;
-            }   
-        }
+        font-size: 425px;
+        font-weight: bold;
+        font-family: lover modern;
+        opacity: 0.8;
     }
 }

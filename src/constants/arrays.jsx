@@ -6,6 +6,11 @@ import netlifyLogo from '../assets/svgs/netlifyLogo.svg';
 import reactLogo from '../assets/svgs/reactLogo.svg';
 import sassLogo from '../assets/svgs/sassLogo.svg';
 import viteLogo from '../assets/svgs/viteLogo.svg';
+import webGenerator from '../assets/images/WebsiteGenerator.jpg';
+import playlistMaker from '../assets/images/PlaylistMaker.jpg';
+import retailSite from '../assets/images/RetailSite.jpg';
+import qrGenSite from '../assets/images/QRGeneratorSite.jpg';
+import authySite from '../assets/images/TicketAuthSite.jpg';
 
 export const fonts = [
   "activist",
@@ -105,7 +110,7 @@ export const projects = [
     techstack: (
       <>
         <img
-          src={"/svgs/viteLogo.svg"}
+          src={viteLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -113,7 +118,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/reactLogo.svg"}
+          src={reactLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -121,7 +126,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -129,7 +134,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/sassLogo.svg"}
+          src={sassLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -141,7 +146,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -166,14 +171,14 @@ export const projects = [
       </>
     ),
     demoUrl: "https://voguevalue.netlify.app",
-    img: "/imgs/RetailSite.jpg",
+    image: retailSite,
   },
   {
     name: "Retail Website",
     techstack: (
       <>
         <img
-          src={"/svgs/viteLogo.svg"}
+          src={viteLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -181,7 +186,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/reactLogo.svg"}
+          src={reactLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -189,7 +194,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -197,7 +202,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/sassLogo.svg"}
+          src={sassLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -209,7 +214,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -234,14 +239,14 @@ export const projects = [
       </>
     ),
     demoUrl: "https://voguevalue.netlify.app",
-    img: "/imgs/RetailSite.jpg",
+    image: retailSite,
   },
   {
     name: "Retail Website",
     techstack: (
       <>
         <img
-          src={"/svgs/viteLogo.svg"}
+          src={viteLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -249,7 +254,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/reactLogo.svg"}
+          src={reactLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -257,7 +262,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -265,7 +270,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/sassLogo.svg"}
+          src={sassLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -277,7 +282,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -302,14 +307,14 @@ export const projects = [
       </>
     ),
     demoUrl: "https://voguevalue.netlify.app",
-    img: "/imgs/RetailSite.jpg",
+    image: retailSite,
   },
   {
     name: "QR Code Generator",
     techstack: (
       <>
         <img
-          src={"/svgs/viteLogo.svg"}
+          src={viteLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -317,7 +322,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/reactLogo.svg"}
+          src={reactLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -325,7 +330,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -337,7 +342,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -360,14 +365,14 @@ export const projects = [
       </>
     ),
     demoUrl: "https://qrbox.netlify.app/",
-    img: "/imgs/QRGeneratorSite.jpg",
+    image: qrGenSite,
   },
   {
     name: "Spotify Playlist Maker",
     techstack: (
       <>
         <img
-          src={"/svgs/reactLogo.svg"}
+          src={reactLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -375,7 +380,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -387,7 +392,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -416,14 +421,14 @@ export const projects = [
       </>
     ),
     demoUrl: "https://soundstack.netlify.app",
-    img: "/imgs/PlaylistMaker.jpg",
+    image: playlistMaker,
   },
   {
     name: "Ticket Authentication Site",
     techstack: (
       <>
         <img
-          src={"/svgs/viteLogo.svg"}
+          src={viteLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -431,7 +436,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/reactLogo.svg"}
+          src={reactLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -439,7 +444,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -447,7 +452,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/sassLogo.svg"}
+          src={sassLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -459,7 +464,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -480,7 +485,7 @@ export const projects = [
       </>
     ),
     demoUrl: "https://authentix.netlify.app/",
-    img: "/imgs/TicketAuthSite.jpg",
+    image: authySite,
   },
   {
     name: "Random Website Generator",
@@ -503,7 +508,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/jsLogo.svg"}
+          src={jsLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -515,7 +520,7 @@ export const projects = [
     dependencies: (
       <>
         <img
-          src={"/svgs/netlifyLogo.svg"}
+          src={netlifyLogo}
           alt="tech logo"
           width={75}
           height={20}
@@ -541,7 +546,7 @@ export const projects = [
       </>
     ),
     demoUrl: "https://thedesktop.netlify.app",
-    img: "/imgs/WebsiteGenerator.jpg",
+    image: webGenerator,
   },
 ];
 
@@ -551,7 +556,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      img: '/artwork-imgs/BBAImg.JPG',
+      image: '/artwork-imgs/BBAImg.JPG',
       GLTF: '/blender-objects/bba-painting-exp.gltf',
   },
   {
@@ -559,7 +564,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      img: '/artwork-imgs/EndGameImg.JPG',
+      image: '/artwork-imgs/EndGameImg.JPG',
       GLTF: '/blender-objects/endgame-exp.gltf',
   },
   {
@@ -567,7 +572,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      img: '/artwork-imgs/EssayImg.JPG',
+      image: '/artwork-imgs/EssayImg.JPG',
       GLTF: '/blender-objects/essay-exp.gltf',
   },
   {
@@ -575,7 +580,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      img: '/artwork-imgs/GoImg.JPG',
+      image: '/artwork-imgs/GoImg.JPG',
       GLTF: '/blender-objects/go!-exp.gltf',
   },
   {
@@ -583,7 +588,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      img: '/artwork-imgs/ThreeRsImg.JPG',
+      image: '/artwork-imgs/ThreeRsImg.JPG',
       GLTF: '/blender-objects/threeRs-exp.gltf',
   }
 ]

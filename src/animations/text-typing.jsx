@@ -6,8 +6,6 @@ export default function TypingText({ text }) {
 // splitting text into letters
   const letters = Array.from(text);
 
-  console.log(letters)
-
 // Variants for Container
   const container = {
     hidden: { opacity: 0 },
