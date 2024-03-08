@@ -11,6 +11,8 @@ import playlistMaker from '../assets/images/PlaylistMaker.jpg';
 import retailSite from '../assets/images/RetailSite.jpg';
 import qrGenSite from '../assets/images/QRGeneratorSite.jpg';
 import authySite from '../assets/images/TicketAuthSite.jpg';
+import artistSite from '../assets/images/ArtistSite.png';
+import cliquesSite from '../assets/images/CliquesWebsite.png';
 
 export const fonts = [
   "activist",
@@ -106,7 +108,7 @@ export const getHeight = () => {
 
 export const projects = [
   {
-    name: "Retail Website",
+    name: "Cliques",
     techstack: (
       <>
         <img
@@ -170,11 +172,11 @@ export const projects = [
         </p>
       </>
     ),
-    demoUrl: "https://voguevalue.netlify.app",
-    image: retailSite,
+    demoUrl: "https://cliques.co/",
+    image: cliquesSite,
   },
   {
-    name: "Retail Website",
+    name: "Artist Website",
     techstack: (
       <>
         <img
@@ -238,8 +240,8 @@ export const projects = [
         </p>
       </>
     ),
-    demoUrl: "https://voguevalue.netlify.app",
-    image: retailSite,
+    demoUrl: "https://vimarics.netlify.app/",
+    image: artistSite,
   },
   {
     name: "Retail Website",

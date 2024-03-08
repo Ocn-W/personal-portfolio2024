@@ -3,7 +3,6 @@ import './style.scss';
 import ShiftText from '../../animations/text-shift';
 import TypingText from '../../animations/text-typing';
 import TextMarquee from '../../animations/text-marquee';
-import SpinningStar from '../../animations/spinning-star';
 import ScrollArrow from '../../animations/scroll-arrow';
 
 export default function AboutMe() {

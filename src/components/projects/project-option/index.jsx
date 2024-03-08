@@ -33,9 +33,9 @@ export default function ProjectOption({ project, curr }) {
         </motion.div>
 
             <div className="project-link"> 
-            <motion.a href={project}>
-                VISIT WEBSITE
-            </motion.a>
+                <motion.a target="_blank" href={project.demoUrl}>
+                    VISIT WEBSITE
+                </motion.a>
             </div>
 
         </section>
