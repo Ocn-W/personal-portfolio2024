@@ -7,7 +7,7 @@ export default function TextMarquee({ text }) {
   const variants = {
     marquee: {
       //Not really a marquee, more twitchy
-      x: [0, -1000, -100, -950, -200],
+      x: [0, 200, -100],
       transition: {
         x: {
           repeat: Infinity,
@@ -25,11 +25,9 @@ export default function TextMarquee({ text }) {
     <motion.div
       style={{
         whiteSpace: "nowrap",
-        borderRadius: "50px",
-        width: "50%",
       }}
       variants={variants}
-      animate="marquee"
+      whileInView="marquee"
     >
       <motion.p>{text}</motion.p>
     </motion.div>

@@ -24,7 +24,7 @@ export default function AboutMe() {
         <section className='text-container'>
         <div className='info-title'>
           <TextMarquee 
-            text={"⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆"}
+            text={"⋆ LOCATION ⋆ LOCATION ⋆ LOCATION ⋆"}
           />
         </div>
         <div className='info-text'>  
@@ -36,7 +36,7 @@ export default function AboutMe() {
         <section className='text-container'>
         <div className='info-title'>
           <TextMarquee 
-            text={"⋆ TECHSTACK ⋆ TECHSTACK ⋆ TECHSTACK ⋆ TECHSTACK ⋆ TECHSTACK ⋆ TECHSTACK ⋆ TECHSTACK ⋆"}
+            text={"⋆ TECHSTACK ⋆ TECHSTACK ⋆ TECHSTACK ⋆"}
           />
         </div>
         <div className='info-text' style={{fontSize: "26px"}}>  
@@ -48,7 +48,7 @@ export default function AboutMe() {
         <section className='text-container'>
         <div className='info-title'>
           <TextMarquee 
-            text={"⋆ PROGRAMS ⋆ PROGRAMS ⋆ PROGRAMS ⋆ PROGRAMS ⋆ PROGRAMS ⋆ PROGRAMS ⋆ PROGRAMS ⋆"}
+            text={"⋆ PROGRAMS ⋆ PROGRAMS ⋆ PROGRAMS ⋆"}
           />
         </div>
         <div className='info-text' style={{fontSize: "26px"}}>  
