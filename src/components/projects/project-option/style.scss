@@ -28,7 +28,7 @@
     .project-info {
         position: fixed;
         top: 0;
-        transform: translateX(120%);
+        left: 45%;
         margin-top: 6%;
         width: 40%;
         height: 85%;
@@ -37,7 +37,7 @@
         justify-content: space-evenly;
         align-items: center;
         border-radius: 20px;
-        background-color: rgba($color: #000000, $alpha: 0.95);
+        background-color: rgba($color: #000000, $alpha: 1);
         color: rgba($color: #FFFFFF, $alpha: 0.8);
         font-size: 16px;
         font-family: against;
@@ -47,8 +47,8 @@
         height: 100px;
         width: 300px;
         border-radius: 75px;
-        top: 75%;
-        transform: translateX(70%);
+        top: 65%;
+        left: 15%;
         display: flex;
         align-items: center;
         justify-content: center;

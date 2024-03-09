@@ -112,14 +112,6 @@ export const projects = [
     techstack: (
       <>
         <img
-          src={viteLogo}
-          alt="tech logo"
-          width={30}
-          height={40}
-          loading="lazy"
-          style={{ objectFit: "contain" }}
-        />
-        <img
           src={reactLogo}
           alt="tech logo"
           width={30}
@@ -136,7 +128,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={sassLogo}
+          src={cssLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -147,29 +139,12 @@ export const projects = [
     ),
     dependencies: (
       <>
-        <img
-          src={netlifyLogo}
-          alt="tech logo"
-          width={75}
-          height={20}
-          loading="lazy"
-          style={{ objectFit: "contain" }}
-        />
-        <p>Jotai</p>
-        <p>React Router</p>
+
       </>
     ),
     description: (
       <>
-        <p>
-          This is a mock e-commerce website using front-end features combined
-          with <em>global state management handled by Jotai</em> and{" "}
-          <em>pagination with React Router</em>. Features include a randomly
-          generated list of clothing items to select your desired purchase,
-          filtering clothing items on the clothing page by price or rating,
-          adding items from your shopping or favorites cart, and a checkout page
-          to view your total and mock form to complete purchases.
-        </p>
+
       </>
     ),
     demoUrl: "https://cliques.co/",
@@ -223,7 +198,6 @@ export const projects = [
           loading="lazy"
           style={{ objectFit: "contain" }}
         />
-        <p>Jotai</p>
         <p>React Router</p>
       </>
     ),
