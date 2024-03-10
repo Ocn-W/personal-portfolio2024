@@ -19,7 +19,7 @@ export default function NavHeader({scrollProp}) {
           <p>PROJECTS</p>
         </li>
         <li>
-          <p>CONTACT</p>
+        <p onClick={() => window.location = 'mailto:ocean.wrng@gmail.com'}>CONTACT</p>
         </li>
         <li>
           <p><span style={{ color: "rgba(255,255,255,0.8)" }}>✶</span>{" "}<RandomizeColor text={"ART"}/></p>
