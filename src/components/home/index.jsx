@@ -5,7 +5,7 @@ import NavOptions from "../navigation";
 import ScrollArrow from "../../animations/scroll-arrow";
 import SpinningStar from "../../animations/spinning-star";
 
-export default function Home() {
+export default function Home({scrollProp}) {
   const variants = {
     initial: {
       opacity: 0
@@ -38,7 +38,7 @@ export default function Home() {
           initial="initial"
           whileInView='display'
           className="nav">
-          <NavOptions/>
+          <NavOptions scrollProp={scrollProp}/>
         </motion.section>
         <motion.div
           variants={variants}

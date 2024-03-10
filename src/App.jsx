@@ -1,21 +1,23 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { useRef } from 'react';
 import './App.scss'
 import Home from './components/home'
 import AboutMe from './components/about-me';
-import NavHeader from './components/navigation/simple-header';
+import NavHeader from './components/navigation/nav-header';
 import Projects from './components/projects';
 import InfoCursor from './animations/info-cursor';
 
 function App() {
+  const parallaxRef = useRef()
   return (
     <>
     <InfoCursor/>
-    <Parallax pages={3}>
+    <Parallax pages={3} ref={parallaxRef}>
       <ParallaxLayer>
-        <Home/>
+        <Home scrollProp={parallaxRef}/>
       </ParallaxLayer>
       <ParallaxLayer sticky={{start: 1, end: 2}} style={{height: 'fit-content'}}>
-        <NavHeader/>
+        <NavHeader scrollProp={parallaxRef}/>
       </ParallaxLayer>
       <ParallaxLayer offset={1}>
         <AboutMe/>

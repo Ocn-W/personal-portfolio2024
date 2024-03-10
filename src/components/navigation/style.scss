@@ -15,7 +15,7 @@
     li {
       width: fit-content;
       cursor: pointer;
-      a {
+      p {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.8);
       }
@@ -44,9 +44,6 @@
   z-index: 2;
   text-align: center;
 
-  p {
-    font-size: 20px;
-  }
   .navbar-container {
     background-color: black;
     color: rgba(255, 255, 255, 0.8);
@@ -67,14 +64,11 @@
 
       li {
         width: 100%;
-        a {
+        p {
           text-decoration: none;
           color: rgba(255, 255, 255, 0.8);
-        }:hover {
-        text-decoration: underline white;
         }
       }
-
     }
   }
 }

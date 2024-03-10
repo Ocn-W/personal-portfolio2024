@@ -13,6 +13,8 @@ import qrGenSite from '../assets/images/QRGeneratorSite.jpg';
 import authySite from '../assets/images/TicketAuthSite.jpg';
 import artistSite from '../assets/images/ArtistSite.png';
 import cliquesSite from '../assets/images/CliquesWebsite.png';
+import nonTechResume from '../assets/pdf/resume_01.pdf';
+import techResume from '../assets/pdf/resume_02.pdf';
 
 export const fonts = [
   "activist",
@@ -33,6 +35,11 @@ export const svgs = [
   sassLogo,
   viteLogo
 ];
+
+export const resume = {
+  technical: techResume,
+  nonTech: nonTechResume
+}
 
 export function getRandomFont() {
   const filteredFonts = fonts.filter((font) => font !== "sans-serif");

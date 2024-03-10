@@ -31,15 +31,15 @@ export default function RandomizerText({ text }) {
   }, []);
 
   return (
-    <motion.h1
+    <motion.span
       whileHover="changeFont"
       initial="initial"
       variants={variants}
-      style={{width: '10%'}}
+      style={{width: '10%', fontWeight: 'bold'}}
       onHoverStart={handleHoverStart}
       onHoverEnd={handleHoverEnd}
     >
       {text}
-    </motion.h1>
+    </motion.span>
   );
 }

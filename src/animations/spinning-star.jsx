@@ -29,7 +29,7 @@ export default function SpinningStar({text}) {
       variants={variants}
       initial={'initial'}
       whileInView={'spin'}
-      exit={() => {'fade'}}
+      exit={'fade'}
       style={{color: 'rgba(255,255,255, 0.8)', fontSize: '100px'}}
     >
       {text}
