@@ -1,52 +1,39 @@
 import React from "react";
+import {motion} from 'framer-motion';
 import "./style.scss";
 import ProjectOption from "./project-option";
-import { getRandomColor, projects } from "../../constants/arrays";
+import { projects } from "../../constants/arrays";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import RandomizeColor from "../../animations/color-randomizer";
 import SpinningStar from "../../animations/spinning-star";
 
 export default function Projects() {
   const variants = {
-    hideComponent: {
-      display: "none",
-      opacity: 0,
-    },
-    hovering: (index) => ({
-      backgroundColor: getRandomColor(),
-      borderRadius: "20%",
+    spinstar: {
+      rotateY: 360,
+      color: 'gold',
       transition: {
-        ease: "circInOut",
-        duration: 1,
-      },
-    }),
-    selected: {
-      borderRadius: "45%",
-      transition: {
-        ease: "circInOut",
-        duration: 0.3,
-        type: "spring",
-      },
-    },
-    showOption: (index) => ({
-      position: "fixed",
-      height: "100%",
-      width: "100%",
-      opacity: 1,
-      transition: {
-        ease: "circIn",
-        duration: 1,
-        type: "anticipate",
-      },
-    }),
-  };
+        ease: "easeInOut",
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: 'mirror',
+        delay: 0
+      }
+    }
+  }
 
   return (
     <>
       <Parallax horizontal pages={projects.length}>
         <section className="projects-container">
           <ParallaxLayer>
-          <h1>✶<RandomizeColor text={"PROJECTS"}/></h1>
+          <h1>
+            <motion.p
+              variants={variants}
+              whileHover={"spinstar"}
+            >✶</motion.p>
+            <RandomizeColor text={"PROJECTS"}/>
+          </h1>
           </ParallaxLayer>
           {projects.map((project, index) => (
             <ParallaxLayer offset={index + 1} speed={1}>

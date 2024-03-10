@@ -18,7 +18,7 @@ export default function AboutMe() {
   }, [toggleResume]);
 
   function displayResume() {
-    setShowResume(true);
+    setShowResume(!showResume);
   }
   function closeDisplay() {
     setShowResume(false);
