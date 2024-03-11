@@ -5,6 +5,7 @@ import { artwork } from "../../constants/arrays";
 import "./style.scss";
 import Artwork from "./artwork";
 import ContentLoader from "../../animations/content-loader";
+import SpinningStar from "../../animations/spinning-star";
 
 export default function ArtworkViewer() {
   const [currArtwork, setSelectedArtwork] = useState(null); // Index value of artwork
@@ -58,7 +59,21 @@ export default function ArtworkViewer() {
               style={{ height: "100%", width: "100%" }}
               className="info-container"
             >
-              <p>SELECT AN ARTWORK TO VIEW IN 3D</p>
+              <p style={{display: 'flex'}}>SELECT AN ARTWORK TO VIEW IN 
+                <motion.div 
+                  style={{marginLeft: '10px'}}
+                  animate={{
+                    rotateY: 360,
+                    rotateX: 360,
+                    rotateZ: 360, 
+                    transition:{
+                      ease: 'easeInOut', 
+                      duration: 5, 
+                      repeat: Infinity, 
+                      repeatType: 'linear'
+                    }
+                  }}>3D</motion.div>
+              </p>
             </div>
           )}
           <section className="art-details">
