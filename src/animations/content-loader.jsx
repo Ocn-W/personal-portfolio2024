@@ -4,12 +4,12 @@ import { useEffect } from "react";
 
 export default function ContentLoader() {
 //Spinning font loading screen
-  const text = "LOADING ... LOADING ...";
+  const text = "✦ LOADING ✦ LOADING ✦ LOADING";
   const characters = text.split("");
 
-  const radius = 80;
-  const fontSize = "18px";
-  const letterSpacing = 12.5;
+  const radius = 100;
+  const fontSize = "24px";
+  const letterSpacing = 12;
 
   const [scope, animate] = useAnimate();
 

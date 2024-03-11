@@ -1,8 +1,7 @@
-import { React, Suspense } from "react";
+import { React } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { artwork } from "../../constants/arrays";
-import ContentLoader from "../../animations/content-loader";
 
 export default function Artwork({ curr, props }) {
   const { nodes, materials } = useGLTF(artwork[curr].GLTF);
@@ -16,7 +15,6 @@ export default function Artwork({ curr, props }) {
       style={{ height: "100%", width: "100%" }}
       className="artwork-container"
     >
-      <Suspense fallback={<ContentLoader/>}>
         <PerspectiveCamera makeDefault {...cameraConfig} />
         <group {...props} dispose={null}>
           <mesh
@@ -48,9 +46,8 @@ export default function Artwork({ curr, props }) {
           object={artwork.map((art) => art.GLTF)}
         />
         <ambientLight intensity={5} />
-      </Suspense>
     </Canvas>
   );
 }
 
-artwork.forEach((item) => useGLTF.preload(item.GLTF));
+useGLTF.preload(artwork.GLTF);

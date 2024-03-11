@@ -34,12 +34,25 @@ export default function ArtworkViewer() {
         whileInView='display'
         className="artview-container"
       >
-        <Link to={'/'} style={{color: 'white', position: 'fixed', left: 10, top: 10, fontFamily: 'against', zIndex: 20}}>&lt; BACK TO PORTOFLIO</Link>
+        <Link 
+          to={'/'} 
+          className="return-text"
+        >
+          &lt; BACK TO PORTOFLIO
+        </Link>
         <section className="art-view">
           {currArtwork !== null ? (
-            <Suspense fallback={<ContentLoader/>}>
-              <Artwork curr={Number(currArtwork)} />
+          <div style={{
+            height: '100%', 
+            width: '100%', 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center'
+          }}>
+            <Suspense fallback={<ContentLoader/>}>  
+              <Artwork curr={Number(currArtwork)} />  
             </Suspense>
+          </div>
           ) : (
             <div
               style={{ height: "100%", width: "100%" }}
@@ -50,30 +63,34 @@ export default function ArtworkViewer() {
           )}
           <section className="art-details">
             <div className="art-details-text">
-              <p style={{ fontWeight: 800 }}>
+              <p style={{ fontWeight: "bold" }}>
                 {currArtwork !== null ? (
                   artwork[currArtwork].name.toUpperCase()
                 ) : (
                   <></>
                 )}
               </p>
+              <div style={{display: 'flex', gap: '10px',justifyContent: 'center'}}>
+              <p style={{ fontWeight: 100 }}>
+                {currArtwork !== null ? artwork[currArtwork].size : <></>}
+              </p>
+              <span style={{ color: "rgba(255,255,255,0.8)" }}>✦</span>
               <p style={{ fontWeight: 100 }}>
                 {currArtwork !== null ? artwork[currArtwork].date : <></>}
               </p>
+              </div>
             </div>
             <section className="art-selection">
               <div className="art-image">
                 {artwork.map((art, index) => (
-                  <Suspense fallback={<ContentLoader/>} key={index}>
                     <img
                       loading="lazy"
                       src={art.image}
-                      alt="3D Rendered Oil Painting"
+                      alt="Image of an oil painting"
                       height={200}
                       width={150}
                       onClick={() => artworkSelected(index)}
                     />
-                  </Suspense>
                 ))}
               </div>
             </section>
