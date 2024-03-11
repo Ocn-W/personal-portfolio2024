@@ -15,6 +15,11 @@ import artistSite from '../assets/images/ArtistSite.png';
 import cliquesSite from '../assets/images/CliquesWebsite.png';
 import nonTechResume from '../assets/pdf/resume_01.pdf';
 import techResume from '../assets/pdf/resume_02.pdf';
+import painting_01 from '../assets/artwork-images/BBAImg.jpg';
+import painting_02 from '../assets/artwork-images/EndGameImg.jpg';
+import painting_03 from '../assets/artwork-images/EssayImg.jpg';
+import painting_04 from '../assets/artwork-images/GoImg.jpg';
+import painting_05 from '../assets/artwork-images/ThreeRsImg.jpg';
 
 export const fonts = [
   "activist",
@@ -539,7 +544,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/artwork-imgs/BBAImg.JPG',
+      image: painting_01,
       GLTF: '/blender-objects/bba-painting-exp.gltf',
   },
   {
@@ -547,7 +552,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/artwork-imgs/EndGameImg.JPG',
+      image: painting_02,
       GLTF: '/blender-objects/endgame-exp.gltf',
   },
   {
@@ -555,7 +560,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/artwork-imgs/EssayImg.JPG',
+      image: painting_03,
       GLTF: '/blender-objects/essay-exp.gltf',
   },
   {
@@ -563,7 +568,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/artwork-imgs/GoImg.JPG',
+      image: painting_04,
       GLTF: '/blender-objects/go!-exp.gltf',
   },
   {
@@ -571,7 +576,7 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/artwork-imgs/ThreeRsImg.JPG',
+      image: painting_05,
       GLTF: '/blender-objects/threeRs-exp.gltf',
   }
 ]

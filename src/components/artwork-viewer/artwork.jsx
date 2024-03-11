@@ -1,4 +1,4 @@
-import { React, Suspense, useEffect } from "react";
+import { React, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { artwork } from "../../constants/arrays";
@@ -15,7 +15,7 @@ export default function Artwork({ curr, props }) {
       style={{ height: "100%", width: "100%" }}
       className="artwork-container"
     >
-      <Suspense fallback={null}>
+      <Suspense>
         <PerspectiveCamera makeDefault {...cameraConfig} />
         <group {...props} dispose={null}>
           <mesh

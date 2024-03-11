@@ -1,4 +1,5 @@
 import { React, Suspense, useState } from "react";
+import { Link } from "react-router-dom";
 import { artwork } from "../../constants/arrays";
 import "./style.scss";
 import Artwork from "./artwork";
@@ -13,9 +14,12 @@ export default function ArtworkViewer() {
   return (
     <>
       <div className="artview-container">
+        <Link to={'/'} style={{color: 'white', position: 'fixed', left: 10, top: 10, fontFamily: 'against', zIndex: 20}}>&lt; BACK TO PORTOFLIO</Link>
         <section className="art-view">
           {currArtwork !== null ? (
-            <Artwork curr={Number(currArtwork)} />
+            <Suspense>
+              <Artwork curr={Number(currArtwork)} />
+            </Suspense>
           ) : (
             <div
               style={{ height: "100%", width: "100%" }}
@@ -40,13 +44,11 @@ export default function ArtworkViewer() {
             <section className="art-selection">
               <div className="art-image">
                 {artwork.map((art, index) => (
-                  <Suspense fallback={null}>
+                  <Suspense key={index}>
                     <img
                       loading="lazy"
                       src={art.image}
                       alt="3D Rendered Oil Painting"
-                      key={index}
-                      fill={false}
                       height={200}
                       width={150}
                       onClick={() => artworkSelected(index)}
