@@ -2,6 +2,7 @@ import { React, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { artwork } from "../../constants/arrays";
+import ContentLoader from "../../animations/content-loader";
 
 export default function Artwork({ curr, props }) {
   const { nodes, materials } = useGLTF(artwork[curr].GLTF);

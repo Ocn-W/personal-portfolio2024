@@ -540,7 +540,7 @@ export const artwork = [
       size: '30in x 40in',
       price: '$200',
       image: '/artwork-images/BBAImg.JPG',
-      GLTF: '/blender-objects/paintings/bba-painting-exp.gltf',
+      GLTF: '/blender-objects/bba-painting-exp.gltf',
   },
   {
       name: 'End Game',
@@ -548,7 +548,7 @@ export const artwork = [
       size: '30in x 40in',
       price: '$200',
       image: '/artwork-images/EndGameImg.JPG',
-      GLTF: '/blender-objects/paintings/endgame-exp.gltf',
+      GLTF: '/blender-objects/endgame-exp.gltf',
   },
   {
       name: 'Essay',
@@ -556,7 +556,7 @@ export const artwork = [
       size: '30in x 40in',
       price: '$200',
       image: '/artwork-images/EssayImg.JPG',
-      GLTF: '/blender-objects/paintings/essay-exp.gltf',
+      GLTF: '/blender-objects/essay-exp.gltf',
   },
   {
       name: 'Go!',
@@ -564,7 +564,7 @@ export const artwork = [
       size: '30in x 40in',
       price: '$200',
       image: '/artwork-images/GoImg.JPG',
-      GLTF: '/blender-objects/paintings/go!-exp.gltf',
+      GLTF: '/blender-objects/go!-exp.gltf',
   },
   {
       name: 'Race Races Racer',
@@ -572,6 +572,6 @@ export const artwork = [
       size: '30in x 40in',
       price: '$200',
       image: '/artwork-images/ThreeRsImg.JPG',
-      GLTF: '/blender-objects/paintings/threeRs-exp.gltf',
+      GLTF: '/blender-objects/threeRs-exp.gltf',
   }
 ]
