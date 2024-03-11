@@ -15,11 +15,6 @@ import artistSite from '../assets/images/ArtistSite.png';
 import cliquesSite from '../assets/images/CliquesWebsite.png';
 import nonTechResume from '../assets/pdf/resume_01.pdf';
 import techResume from '../assets/pdf/resume_02.pdf';
-import painting_01 from '../assets/artwork-images/BBAImg.jpg';
-import painting_02 from '../assets/artwork-images/EndGameImg.jpg';
-import painting_03 from '../assets/artwork-images/EssayImg.jpg';
-import painting_04 from '../assets/artwork-images/GoImg.jpg';
-import painting_05 from '../assets/artwork-images/ThreeRsImg.jpg';
 
 export const fonts = [
   "activist",
@@ -544,39 +539,39 @@ export const artwork = [
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/assets/artwork-images/BBAImg.JPG',
-      GLTF: '/assets/blender-objects/paintings/bba-painting-exp.gltf',
+      image: '/artwork-images/BBAImg.JPG',
+      GLTF: '/blender-objects/paintings/bba-painting-exp.gltf',
   },
   {
       name: 'End Game',
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/assets/artwork-images/EndGameImg.JPG',
-      GLTF: '/assets/blender-objects/paintings/endgame-exp.gltf',
+      image: '/artwork-images/EndGameImg.JPG',
+      GLTF: '/blender-objects/paintings/endgame-exp.gltf',
   },
   {
       name: 'Essay',
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/assets/artwork-images/EssayImg.JPG',
-      GLTF: '/assets/blender-objects/paintings/essay-exp.gltf',
+      image: '/artwork-images/EssayImg.JPG',
+      GLTF: '/blender-objects/paintings/essay-exp.gltf',
   },
   {
       name: 'Go!',
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/assets/artwork-images/GoImg.JPG',
-      GLTF: '/assets/blender-objects/paintings/go!-exp.gltf',
+      image: '/artwork-images/GoImg.JPG',
+      GLTF: '/blender-objects/paintings/go!-exp.gltf',
   },
   {
       name: 'Race Races Racer',
       date: '2023',
       size: '30in x 40in',
       price: '$200',
-      image: '/assets/artwork-images/ThreeRsImg.JPG',
-      GLTF: '/assets/blender-objects/paintings/threeRs-exp.gltf',
+      image: '/artwork-images/ThreeRsImg.JPG',
+      GLTF: '/blender-objects/paintings/threeRs-exp.gltf',
   }
 ]
