@@ -1,32 +1,21 @@
 import { React, Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { artwork } from "@/app/components/constants/arrays";
-import Loading from "./loading";
+import { artwork } from "../../constants/arrays";
 
-export default function Artwork({ curr, props, params }) {
-  const fetchProduct = async (curr) => {
-    const response = await fetch(`${artwork[curr].GLTF}`);
-    const art = await response.json();
-
-    return art;
-  };
+export default function Artwork({ curr, props }) {
   const { nodes, materials } = useGLTF(artwork[curr].GLTF);
   //Edit Camera Position
   const cameraConfig = { fov: 60, position: [10, 0, 0], zoom: 1 };
   //Edit object Positon (X|Y|Z)
   const objectPosition = [0, -4, 0];
 
-  useEffect(() => {
-    fetchProduct(curr);
-  }, [curr]);
-
   return (
     <Canvas
       style={{ height: "100%", width: "100%" }}
       className="artwork-container"
     >
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={null}>
         <PerspectiveCamera makeDefault {...cameraConfig} />
         <group {...props} dispose={null}>
           <mesh

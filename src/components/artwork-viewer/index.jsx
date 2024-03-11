@@ -1,10 +1,7 @@
-"use client";
 import { React, Suspense, useState } from "react";
-import { artwork } from "../components/constants/arrays";
-import Image from "next/image";
+import { artwork } from "../../constants/arrays";
 import "./style.scss";
-import FadeInTemplate from "../components/animations/template";
-import Artwork from "./[artwork]";
+import Artwork from "./artwork";
 
 export default function ArtworkViewer() {
   const [currArtwork, setSelectedArtwork] = useState(null); // Index value of artwork
@@ -14,7 +11,7 @@ export default function ArtworkViewer() {
   }
 
   return (
-    <FadeInTemplate screen={true}>
+    <>
       <div className="artview-container">
         <section className="art-view">
           {currArtwork !== null ? (
@@ -43,8 +40,8 @@ export default function ArtworkViewer() {
             <section className="art-selection">
               <div className="art-image">
                 {artwork.map((art, index) => (
-                  <Suspense fallback={<Loading/>}>
-                    <Image
+                  <Suspense fallback={null}>
+                    <img
                       loading="lazy"
                       src={art.image}
                       alt="3D Rendered Oil Painting"
@@ -61,6 +58,6 @@ export default function ArtworkViewer() {
           </section>
         </section>
       </div>
-    </FadeInTemplate>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './style.scss';
 import RandomizerText from '../../animations/font-randomizer';
 import RandomizeColor from '../../animations/color-randomizer';
@@ -22,7 +23,7 @@ export default function NavHeader({scrollProp}) {
         <p onClick={() => window.location = 'mailto:ocean.wrng@gmail.com'}>CONTACT</p>
         </li>
         <li>
-          <p><span style={{ color: "rgba(255,255,255,0.8)" }}>✶</span>{" "}<RandomizeColor text={"ART"}/></p>
+          <Link to={'gallery'}><span style={{ color: "rgba(255,255,255,0.8)" }}>✶</span>{" "}<RandomizeColor text={"ART"}/></Link>
         </li>
       </ul>
     </div>

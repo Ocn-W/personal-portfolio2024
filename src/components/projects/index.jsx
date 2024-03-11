@@ -36,7 +36,7 @@ export default function Projects() {
           </h1>
           </ParallaxLayer>
           {projects.map((project, index) => (
-            <ParallaxLayer offset={index + 1} speed={1}>
+            <ParallaxLayer offset={index + 1} speed={1} key={index}>
               <ProjectOption project={project} curr={index} />
             </ParallaxLayer>
           ))}
