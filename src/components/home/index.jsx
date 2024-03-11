@@ -4,6 +4,7 @@ import './style.scss';
 import NavOptions from "../navigation";
 import ScrollArrow from "../../animations/scroll-arrow";
 import SpinningStar from "../../animations/spinning-star";
+import ContentLoader from "../../animations/content-loader";
 
 export default function Home({scrollProp}) {
   const variants = {
@@ -20,7 +21,7 @@ export default function Home({scrollProp}) {
   };
 
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<ContentLoader/>}>
       <main>
         <motion.section 
           variants={variants}

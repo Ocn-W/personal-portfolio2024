@@ -19,6 +19,9 @@
         text-decoration: none;
         color: rgba(255, 255, 255, 0.8);
       }
+      a {
+        text-decoration: none;
+      }
     }
     :hover {
       text-decoration: underline rgba(255, 255, 255, 0.8);
@@ -67,6 +70,13 @@
         p {
           text-decoration: none;
           color: rgba(255, 255, 255, 0.8);
+        }:hover {
+          text-decoration: underline rgba(255, 255, 255, 0.8);
+        }
+        a {
+          text-decoration: none;
+        }:hover {
+          text-decoration: underline rgba(255, 255, 255, 0.8);
         }
       }
     }

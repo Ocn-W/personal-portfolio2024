@@ -7,6 +7,7 @@ import TextMarquee from "../../animations/text-marquee";
 import ScrollArrow from "../../animations/scroll-arrow";
 import ResumeBtn from "../resume-btn";
 import { resume } from "../../constants/arrays";
+import ContentLoader from "../../animations/content-loader";
 
 export default function AboutMe() {
   const [showResume, setShowResume] = useState(false);
@@ -144,7 +145,7 @@ export default function AboutMe() {
                 </motion.p>
               </div>
             </div>
-              <Suspense fallback={null}>
+              <Suspense fallback={<ContentLoader/>}>
                 <object
                   data={
                     toggleResume === "tech" ? resume.technical : resume.nonTech

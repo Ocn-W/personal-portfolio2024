@@ -1,4 +1,4 @@
-.cursor{
+.cursor {
     position: fixed;
     left: 0;
     top: 0;
@@ -10,3 +10,17 @@
     z-index: 999;
     pointer-events: none;
 }
+
+.circle {
+    position: relative;
+    aspect-ratio: 1;
+}
+  
+.letter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-family: against;
+    color: white;
+}
+  

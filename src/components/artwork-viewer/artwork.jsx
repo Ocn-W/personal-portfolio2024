@@ -15,7 +15,7 @@ export default function Artwork({ curr, props }) {
       style={{ height: "100%", width: "100%" }}
       className="artwork-container"
     >
-      <Suspense>
+      <Suspense fallback={<ContentLoader/>}>
         <PerspectiveCamera makeDefault {...cameraConfig} />
         <group {...props} dispose={null}>
           <mesh

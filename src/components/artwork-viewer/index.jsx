@@ -1,23 +1,43 @@
 import { React, Suspense, useState } from "react";
 import { Link } from "react-router-dom";
+import {motion} from 'framer-motion';
 import { artwork } from "../../constants/arrays";
 import "./style.scss";
 import Artwork from "./artwork";
+import ContentLoader from "../../animations/content-loader";
 
 export default function ArtworkViewer() {
   const [currArtwork, setSelectedArtwork] = useState(null); // Index value of artwork
-
+  
   function artworkSelected(index) {
     setSelectedArtwork(index);
   }
 
+  const variants = {
+    initial: {
+      opacity: 0
+    },
+    display: {
+      opacity: 1,
+      transition: {
+        ease: 'easeInOut',
+        duration: 1,
+      }
+    }
+  };
+
   return (
     <>
-      <div className="artview-container">
+      <motion.div 
+        variants={variants}
+        initial="initial"
+        whileInView='display'
+        className="artview-container"
+      >
         <Link to={'/'} style={{color: 'white', position: 'fixed', left: 10, top: 10, fontFamily: 'against', zIndex: 20}}>&lt; BACK TO PORTOFLIO</Link>
         <section className="art-view">
           {currArtwork !== null ? (
-            <Suspense>
+            <Suspense fallback={<ContentLoader/>}>
               <Artwork curr={Number(currArtwork)} />
             </Suspense>
           ) : (
@@ -44,7 +64,7 @@ export default function ArtworkViewer() {
             <section className="art-selection">
               <div className="art-image">
                 {artwork.map((art, index) => (
-                  <Suspense key={index}>
+                  <Suspense fallback={<ContentLoader/>} key={index}>
                     <img
                       loading="lazy"
                       src={art.image}
@@ -59,7 +79,7 @@ export default function ArtworkViewer() {
             </section>
           </section>
         </section>
-      </div>
+      </motion.div>
     </>
   );
 }

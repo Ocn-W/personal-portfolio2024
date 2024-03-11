@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import React, { useEffect } from "react";
-import './cursor.scss';
+import './anim-styles.scss';
 
 export default function InfoCursor() {
     const cursorX = useMotionValue();
