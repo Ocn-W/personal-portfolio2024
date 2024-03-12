@@ -149,23 +149,36 @@ export const projects = [
           loading="lazy"
           style={{ objectFit: "contain" }}
         />
+        <p>REACT NATIVE</p>
+        <p>GRADLE</p>
       </>
     ),
     dependencies: (
       <>
-
+        <p>REST APIs</p>
+        <p>Axios</p>
+        <p>ANDROID STUDIOS</p>
+        <p>Google Play Services</p>
+        <p>BitBucket</p>
+        <p>Firebase</p>
       </>
     ),
     description: (
       <>
-
+        <p>
+          I am the lead front end developer for this mobile application. I
+          handle front end UI/UX as well as managing scheduled update releases
+          on <em>Google Play Services</em>. Including creating visual documentation in <em>Figma</em>,
+          marketing content in <em>Canva</em>, and database rule management in <em>FireBase</em>. Currently
+          available on iOS and Google Play stores!
+        </p>
       </>
     ),
     demoUrl: "https://cliques.co/",
     image: cliquesSite,
   },
   {
-    name: "Artist Website",
+    name: "Artist Landing Page",
     techstack: (
       <>
         <img
@@ -212,19 +225,17 @@ export const projects = [
           loading="lazy"
           style={{ objectFit: "contain" }}
         />
-        <p>React Router</p>
+        <p>React-Three-Fiber</p>
+        <p>Blender</p>
+        <p>TS-Particles</p>
       </>
     ),
     description: (
       <>
         <p>
-          This is a mock e-commerce website using front-end features combined
-          with <em>global state management handled by Jotai</em> and{" "}
-          <em>pagination with React Router</em>. Features include a randomly
-          generated list of clothing items to select your desired purchase,
-          filtering clothing items on the clothing page by price or rating,
-          adding items from your shopping or favorites cart, and a checkout page
-          to view your total and mock form to complete purchases.
+          A unique, vibrant, and video-game inspired landing page with an infinite 3D movement effect.
+          3D assets for this project created by me in <em>Blender</em> and brought to life on the web using{" "}
+          <em>ThreeJS for React (R3F)</em>.
         </p>
       </>
     ),
@@ -396,15 +407,24 @@ export const projects = [
     description: (
       <>
         <p>
-          This web application makes use of the SpotifyAPI to search your favorite songs and create custom playlists to upload directly to Spotify. The major features for this website include searching the Spotify database to find your favorite songs and creating/editing custom playlist to publish to your Spotify account. This project was my way of diving into understanding core concepts around {" "}
-          <em>React Context</em>, {" "}
-          <em>handling token requests and API data</em>, {" "}
-          <em>hiding important API keys for production with dotenv and through Netlify</em>, {" "}
-          <em>repository history management on GitHub with GitBash</em>, {" "}
-          as well as the overall workflow for SPA&apos;s in React without using major libraries. {" "}
+          This web application makes use of the SpotifyAPI to search your
+          favorite songs and create custom playlists to upload directly to
+          Spotify. The major features for this website include searching the
+          Spotify database to find your favorite songs and creating/editing
+          custom playlist to publish to your Spotify account. This project was
+          my way of diving into understanding core concepts around{" "}
+          <em>React Context</em>, <em>handling token requests and API data</em>,{" "}
+          <em>
+            hiding important API keys for production with dotenv and through
+            Netlify
+          </em>
+          , <em>repository history management on GitHub with GitBash</em>, as
+          well as the overall workflow for SPA&apos;s in React without using
+          major libraries.{" "}
           <strong>
             <em>
-              You do not need to authorize your account to create the playlist, only to upload!
+              You do not need to authorize your account to create the playlist,
+              only to upload!
             </em>
           </strong>
         </p>
