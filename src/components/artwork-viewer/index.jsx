@@ -5,7 +5,6 @@ import { artwork, getPastelColor } from "../../constants/arrays";
 import "./style.scss";
 import Artwork from "./artwork";
 import ContentLoader from "../../animations/content-loader";
-import SpinningStar from "../../animations/spinning-star";
 
 export default function ArtworkViewer() {
   const [currArtwork, setSelectedArtwork] = useState(null); // Index value of artwork

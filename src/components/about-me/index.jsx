@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { motion, useAnimation } from "framer-motion";
 import "./style.scss";
 import ShiftText from "../../animations/text-shift";
@@ -7,6 +7,7 @@ import TextMarquee from "../../animations/text-marquee";
 import ScrollArrow from "../../animations/scroll-arrow";
 import ResumeBtn from "../resume-btn";
 import { resume } from "../../constants/arrays";
+import ContentLoader from "../../animations/content-loader";
 
 export default function AboutMe() {
   const [showResume, setShowResume] = useState(false);
@@ -73,6 +74,7 @@ export default function AboutMe() {
   return (
     <section className="about-me">
       <section className="left-side">
+        <Suspense fallback={<ContentLoader/>}>
         <div
           style={{
             transform: "scaleY(3)",
@@ -82,8 +84,10 @@ export default function AboutMe() {
         >
           <ShiftText textOne={"WEB DESIGNER"} textTwo={"FRONT-END DEVELOPER"} />
         </div>
+        </Suspense>
       </section>
       <section className="right-side">
+        <Suspense fallback={<ContentLoader/>}>
         {!showResume ? (
           <>
             <section className="text-container">
@@ -154,6 +158,7 @@ export default function AboutMe() {
                 />
           </motion.section>
         )}
+        </Suspense>
       </section>
       <motion.div
         initial={{ border: "1px solid rgba(255,255,255,0.8)" }}
