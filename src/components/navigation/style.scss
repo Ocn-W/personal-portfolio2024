@@ -79,6 +79,15 @@
           text-decoration: underline rgba(255, 255, 255, 0.8);
         }
       }
+
+      .home-btn {
+        h1 {
+          // FOR SOME REASON h1:hover DOESNT WORK??
+          //HAVE TO SEPERATE IT LIKE THIS 
+        }:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 }

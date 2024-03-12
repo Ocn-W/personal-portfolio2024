@@ -10,7 +10,7 @@ export default function NavHeader({scrollProp}) {
     <motion.section className='nav-header'>
       <div className="navbar-container">
       <ul>
-        <li ref={scrollProp} onClick={() => scrollProp.current.scrollTo(0)} style={{display: 'flex', justifyContent: 'center'}}>
+        <li ref={scrollProp} onClick={() => scrollProp.current.scrollTo(0)} style={{display: 'flex', justifyContent: 'center'}} className='home-btn'>
           <h1><RandomizerText text={"OCEAN"}/>{" "}<span style={{ color: "rgba(255,255,255,0.8)" }}>✦</span></h1>
         </li>
         <li ref={scrollProp} onClick={() => scrollProp.current.scrollTo(1)}>

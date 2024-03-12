@@ -6,6 +6,8 @@ import netlifyLogo from '../assets/svgs/netlifyLogo.svg';
 import reactLogo from '../assets/svgs/reactLogo.svg';
 import sassLogo from '../assets/svgs/sassLogo.svg';
 import viteLogo from '../assets/svgs/viteLogo.svg';
+import linkedInLogo from '../assets/svgs/LinkedIn-white.svg';
+import githubLogo from '../assets/svgs/Github-white.svg';
 import webGenerator from '../assets/images/WebsiteGenerator.jpg';
 import playlistMaker from '../assets/images/PlaylistMaker.jpg';
 import retailSite from '../assets/images/RetailSite.jpg';
@@ -26,6 +28,11 @@ export const fonts = [
   "lover modern"
 ];
 
+export const platformSvgs = {
+  linkedin: linkedInLogo,
+  github: githubLogo
+}
+
 export const svgs = [
   cssLogo,
   htmlLogo,
@@ -33,7 +40,7 @@ export const svgs = [
   netlifyLogo,
   reactLogo,
   sassLogo,
-  viteLogo
+  viteLogo,
 ];
 
 export const resume = {
