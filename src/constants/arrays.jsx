@@ -502,7 +502,7 @@ export const projects = [
     techstack: (
       <>
         <img
-          src={"/svgs/htmlLogo.svg"}
+          src={htmlLogo}
           alt="tech logo"
           width={30}
           height={40}
@@ -510,7 +510,7 @@ export const projects = [
           style={{ objectFit: "contain" }}
         />
         <img
-          src={"/svgs/cssLogo.svg"}
+          src={cssLogo}
           alt="tech logo"
           width={30}
           height={40}

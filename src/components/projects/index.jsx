@@ -24,7 +24,7 @@ export default function Projects() {
 
   return (
     <>
-      <Parallax horizontal pages={projects.length}>
+      <Parallax horizontal pages={projects.length + 1}>
         <section className="projects-container">
           <ParallaxLayer>
           <h1>
