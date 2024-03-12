@@ -145,7 +145,6 @@ export default function AboutMe() {
                 </motion.p>
               </div>
             </div>
-              <Suspense fallback={<ContentLoader/>}>
                 <object
                   data={
                     toggleResume === "tech" ? resume.technical : resume.nonTech
@@ -154,7 +153,6 @@ export default function AboutMe() {
                   height="100%"
                   type="application/pdf"
                 />
-              </Suspense>
           </motion.section>
         )}
       </section>
