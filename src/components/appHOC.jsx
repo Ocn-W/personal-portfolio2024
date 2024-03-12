@@ -15,7 +15,7 @@ export default function AppHOC() {
         <ParallaxLayer>
           <Home scrollProp={parallaxRef}/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{start: 1, end: 2}} style={{height: 'fit-content'}}>
+        <ParallaxLayer sticky={{start: 1, end: 2}} speed={1} style={{height: 'fit-content'}}>
           <NavHeader scrollProp={parallaxRef}/>
         </ParallaxLayer>
         <ParallaxLayer offset={1}>
@@ -23,8 +23,7 @@ export default function AppHOC() {
         </ParallaxLayer>
         <ParallaxLayer offset={2}>
           <Projects/>
-        </ParallaxLayer>
-        
+        </ParallaxLayer> 
       </Parallax>
       {/* PAGE TRANSITION DIV */}
       <motion.div

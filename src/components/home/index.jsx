@@ -39,7 +39,7 @@ export default function Home({ scrollProp }) {
           <div className="intro-links">
             <a 
               target="#" 
-              href="https://github.com/Ocn-W"
+              href="https://www.linkedin.com/in/ocean-waring/"
             >
               <motion.img
                 loading="lazy"
@@ -52,7 +52,7 @@ export default function Home({ scrollProp }) {
             </a>
             <a                     
               target="#"
-              href="https://www.linkedin.com/in/ocean-waring/"
+              href="https://github.com/Ocn-W"
             >
               <motion.img
                 loading="lazy"
