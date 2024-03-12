@@ -8,3 +8,30 @@
         font-size: 50px;
     }
 }
+
+// RESPONSIVE QUERIES
+@media only screen and (max-width: 767px) {
+    .resumeBtn-container {
+        padding: 0 80px;
+        border: none;
+        background-color: black;
+        h2 {
+            font-family: against;
+            color: rgba(255,255,255,0.8);
+            font-size: 35px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .resumeBtn-container {
+        padding: 0 50px;
+        border: none;
+        background-color: black;
+        h2 {
+            font-family: against;
+            color: rgba(255,255,255,0.8);
+            font-size: 50px;
+        }
+    }
+}

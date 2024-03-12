@@ -1,4 +1,4 @@
-import React, { useState, Suspense, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import "./style.scss";
 import ShiftText from "../../animations/text-shift";
@@ -7,7 +7,6 @@ import TextMarquee from "../../animations/text-marquee";
 import ScrollArrow from "../../animations/scroll-arrow";
 import ResumeBtn from "../resume-btn";
 import { resume } from "../../constants/arrays";
-import ContentLoader from "../../animations/content-loader";
 
 export default function AboutMe() {
   const [showResume, setShowResume] = useState(false);
