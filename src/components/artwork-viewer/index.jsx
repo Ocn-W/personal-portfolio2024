@@ -1,7 +1,7 @@
 import { React, Suspense, useState } from "react";
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion';
-import { artwork } from "../../constants/arrays";
+import { artwork, getPastelColor } from "../../constants/arrays";
 import "./style.scss";
 import Artwork from "./artwork";
 import ContentLoader from "../../animations/content-loader";
@@ -112,6 +112,14 @@ export default function ArtworkViewer() {
           </section>
         </section>
       </motion.div>
+      {/* PAGE TRANSITION DIV */}
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "easeInOut" }}}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "easeInOut" }}}
+        style={{ originX: 1 }}
+        className='transition-screen'
+      />
     </>
   );
 }
