@@ -48,8 +48,7 @@ export default function ShiftText({textOne, textTwo}) {
     <motion.span
       variants={variants}
       initial={'initial'}
-      whileHover={["shrinkFadeOut"]}
-      exit={{ease: "easeInOut", duration: 0.1}}
+      whileHover={"shrinkFadeOut"}
       key={i}
       style={{
         color: 'white',

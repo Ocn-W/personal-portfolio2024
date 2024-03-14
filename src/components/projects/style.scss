@@ -19,46 +19,24 @@
 }
 
 // RESPONSIVE QUERIES
-// @media only screen and (max-width: 767px) {
-//     .projects-container {
-//         h1 {
-//             position: absolute;
-//             top: 40%;
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: center;
-//             align-items: center;
+@media only screen and (max-width: 767px) {
+    .projects-container {
+        h1 {
+            position: absolute;
+            top: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         
-//             font-size: 75px;
-//             font-weight: bold;
-//             font-family: lover modern;
-//             opacity: 0.8;
+            font-size: 75px;
+            font-weight: bold;
+            font-family: lover modern;
+            opacity: 0.8;
 
-//             p {
-//                 font-size: 75px;
-//             }
-//         }
-//     }
-// }
-
-// @media only screen and (min-width: 767px) {
-//     .projects-container {
-//         h1 {
-//             position: absolute;
-//             top: 30%;
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: center;
-//             align-items: center;
-        
-//             font-size: 200px;
-//             font-weight: bold;
-//             font-family: lover modern;
-//             opacity: 0.8;
-
-//             p {
-//                 font-size: 200px;
-//             }
-//         }
-//     }
-// }
+            p {
+                font-size: 75px;
+            }
+        }
+    }
+}

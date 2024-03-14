@@ -74,7 +74,6 @@ export default function AboutMe() {
   return (
     <section className="about-me">
       <section className="left-side">
-        <Suspense fallback={<ContentLoader/>}>
         <div
           style={{
             transform: "scaleY(3)",
@@ -84,10 +83,9 @@ export default function AboutMe() {
         >
           <ShiftText textOne={"WEB DESIGNER"} textTwo={"FRONT-END DEVELOPER"} />
         </div>
-        </Suspense>
       </section>
       <section className="right-side">
-        <Suspense fallback={<ContentLoader/>}>
+        
         {!showResume ? (
           <>
             <section className="text-container">
@@ -148,6 +146,7 @@ export default function AboutMe() {
                 </motion.p>
               </div>
             </div>
+              <Suspense fallback={<ContentLoader/>}>
                 <object
                   data={
                     toggleResume === "tech" ? resume.technical : resume.nonTech
@@ -156,9 +155,9 @@ export default function AboutMe() {
                   height="100%"
                   type="application/pdf"
                 />
+              </Suspense>
           </motion.section>
-        )}
-        </Suspense>
+        )} 
       </section>
       <motion.div
         initial={{ border: "1px solid rgba(255,255,255,0.8)" }}

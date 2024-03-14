@@ -50,53 +50,28 @@ main {
     }
 }
 
-// RESPONSIVE QUERIES
-//  @media only screen and (max-width: 767px) {
-//     .intro {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
+// RESPONSIVE QUERY
+ @media only screen and (max-width: 767px) {
+    .intro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-//         &-text {
-//             h1 {
-//                 font-size: 65px !important;
-//             }
-//         }
+        &-text {
+            h1 {
+                font-size: 65px !important;
+            }
+        }
 
-//         &-links {
-//             img {
-//                 margin: 0 10px;
-//             }
-//         }
-//     }
+        &-links {
+            img {
+                margin: 0 10px;
+            }
+        }
+    }
 
-//     .scroll-footer {
-//         margin-bottom: 10px;
-//     }
-// }
-
-// @media only screen and (min-width: 767px) {
-//     .intro {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-
-//         &-text {
-//             h1 {
-//                 font-size: 100px !important;
-//             }
-//         }
-
-//         &-links {
-//             img {
-//                 margin: 0 10px;
-//             }
-//         }
-//     }
-
-//     .scroll-footer {
-//         margin-bottom: 10px;
-//     }
-// }
+    .scroll-footer {
+        margin-bottom: 10px;
+    }
+}
